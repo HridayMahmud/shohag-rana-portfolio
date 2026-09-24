@@ -50,12 +50,16 @@ export function SiteHeader() {
 
     if (sections.length === 0 || typeof IntersectionObserver === "undefined") return;
 
+    // Track every section in the band so the highlight clears when none is
+    // there (back at the hero, or on a section that is not in the nav).
+    const inBand = new Set<string>();
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActive(visible.target.id);
+        for (const entry of entries) {
+          if (entry.isIntersecting) inBand.add(entry.target.id);
+          else inBand.delete(entry.target.id);
+        }
+        setActive(sections.find((section) => inBand.has(section.id))?.id ?? "");
       },
       { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.2, 1] },
     );
