@@ -3,6 +3,7 @@ import Image from "next/image";
 import { experience, profile } from "@/lib/content";
 import { reveal } from "@/lib/reveal";
 import { ArrowDown, ArrowUpRight, Download, GitHub, LinkedIn, Mail } from "./icons";
+import { HeroParticles } from "./hero-particles";
 import { StatStrip } from "./stat-strip";
 
 export function Hero() {
@@ -10,9 +11,10 @@ export function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
-      {/* Decorative background: blueprint grid + a single warm glow. */}
+      {/* Decorative background: blueprint grid, a faint constellation and a warm glow. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
         <div className="bg-grid mask-fade-b absolute inset-0" />
+        <HeroParticles />
         <div className="absolute -top-40 right-[-10%] size-[34rem] rounded-full bg-accent-soft blur-[120px]" />
         <div className="absolute bottom-0 left-[-15%] size-[26rem] rounded-full bg-accent-soft opacity-60 blur-[140px]" />
       </div>
