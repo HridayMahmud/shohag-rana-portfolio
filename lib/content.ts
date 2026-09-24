@@ -36,7 +36,7 @@ export type Experience = {
   stack: string[];
 };
 
-export type SkillGroup = { title: string; items: string[] };
+export type SkillGroup = { title: string; items: string[]; secondary?: boolean };
 
 export type Project = {
   slug: string;
@@ -69,9 +69,12 @@ export type Stat = { value: string; label: string };
 
 export const meta: { description: string; keywords: string[] } = content.meta;
 export const profile: Profile = content.profile;
-export const sections: { experienceIntro: string; projectsIntro: string } = content.sections;
+export const sections: { skillsIntro: string; experienceIntro: string; projectsIntro: string } =
+  content.sections;
 export const experience: Experience[] = content.experience;
 export const skillGroups: SkillGroup[] = content.skillGroups;
+/** Skills the CV shows in professional (production) use — drives the dot in the skills grid. */
+export const productionSkills: ReadonlySet<string> = new Set(content.productionSkills);
 /** Flat list used by the hero marquee. */
 export const marqueeStack: string[] = content.marqueeStack;
 export const projects: Project[] = content.projects;

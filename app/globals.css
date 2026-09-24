@@ -22,6 +22,15 @@
   --accent-contrast: #ffffff;
   --shadow-card: 0 1px 2px rgba(22, 22, 26, 0.04), 0 12px 32px -18px rgba(22, 22, 26, 0.3);
   --grid-line: rgba(22, 22, 26, 0.045);
+  /* Skill-group tones (logos, markers) and the "used in production" dot. */
+  --tone-1: #a2620f;
+  --tone-2: #0f766e;
+  --tone-3: #4d7c0f;
+  --tone-4: #1d5fa8;
+  --tone-5: #b42346;
+  --tone-6: #7c4a9e;
+  --tone-7: #6b6b74;
+  --live: #15803d;
   color-scheme: light;
 }
 
@@ -40,6 +49,14 @@
   --accent-contrast: #17120a;
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 40px -24px rgba(0, 0, 0, 0.9);
   --grid-line: rgba(255, 255, 255, 0.04);
+  --tone-1: #f0b45c;
+  --tone-2: #5eead4;
+  --tone-3: #a3d65c;
+  --tone-4: #7cb4f0;
+  --tone-5: #f38ba8;
+  --tone-6: #c9a6ec;
+  --tone-7: #9a9aa6;
+  --live: #4ade80;
   color-scheme: dark;
 }
 

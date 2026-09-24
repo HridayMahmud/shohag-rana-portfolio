@@ -52,6 +52,7 @@
     }
   ],
   "sections": {
+    "skillsIntro": "Grouped the way my CV lists them. A dot marks the tools I have used in production at Codemoly or BemanTech.",
     "experienceIntro": "Full-stack roles across web and mobile — from MERN-stack web applications to a multi-tenant healthcare SaaS with a React Native app on Google Play.",
     "projectsIntro": "A production healthcare SaaS and two API-first backends — each one built end to end, from data model and authentication through to release."
   },
@@ -171,8 +172,34 @@
         "Python",
         "Java",
         "SQL Server"
-      ]
+      ],
+      "secondary": true
     }
+  ],
+  "productionSkills": [
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Vue.js",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "RESTful API design",
+    "Socket.IO",
+    "PostgreSQL",
+    "MongoDB",
+    "Drizzle ORM",
+    "JWT",
+    "Better Auth",
+    "Role-Based Access Control (RBAC)",
+    "PostgreSQL Row-Level Security",
+    "React Native",
+    "Expo",
+    "Google Play releases",
+    "GitHub Actions",
+    "Vitest",
+    "Playwright",
+    "pnpm monorepo"
   ],
   "marqueeStack": [
     "TypeScript",
