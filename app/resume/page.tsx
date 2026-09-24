@@ -8,6 +8,8 @@ import {
   languages,
   profile,
   projects,
+  references,
+  referencesNote,
   skillGroups,
 } from "@/lib/content";
 
@@ -69,6 +71,16 @@ export default function ResumePage() {
                 className="hover:text-ink"
               >
                 github.com/{profile.githubHandle}
+              </a>
+            </li>
+            <li>
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="break-all hover:text-ink"
+              >
+                linkedin.com/in/{profile.linkedinHandle}
               </a>
             </li>
           </ul>
@@ -177,6 +189,7 @@ export default function ResumePage() {
                   <div>
                     <h3 className="text-[0.9375rem] font-semibold tracking-tight">
                       {item.qualification}
+                      {item.group ? ` — ${item.group}` : null}
                     </h3>
                     <p className="mt-1 text-sm text-muted">{item.institution}</p>
                   </div>
@@ -193,10 +206,22 @@ export default function ResumePage() {
               <div className="grid gap-1 sm:grid-cols-[13rem_1fr] sm:gap-4">
                 <dt className="text-sm font-medium">Languages</dt>
                 <dd className="text-sm text-muted">
-                  {languages.map((language) => `${language.name} — ${language.level}`).join(", ")}
+                  {languages.map((language) => `${language.name} (${language.level})`).join(", ")}
                 </dd>
               </div>
             </dl>
+          </Block>
+
+          <Block title="References">
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {references.map((reference) => (
+                <li key={reference.name}>
+                  <h3 className="text-[0.9375rem] font-semibold tracking-tight">{reference.name}</h3>
+                  <p className="mt-1 text-sm text-muted">{reference.title}</p>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-xs text-subtle">{referencesNote}</p>
           </Block>
         </div>
 

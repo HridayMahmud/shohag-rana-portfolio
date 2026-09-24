@@ -1,7 +1,7 @@
 import { profile } from "@/lib/content";
 import { reveal } from "@/lib/reveal";
 import { CopyButton } from "./copy-button";
-import { ArrowUpRight, Download, GitHub, Mail, MapPin, Phone } from "./icons";
+import { ArrowUpRight, Download, GitHub, LinkedIn, Mail, MapPin, Phone } from "./icons";
 import { Section } from "./section";
 
 const channels = [
@@ -30,6 +30,14 @@ const channels = [
     external: true,
   },
   {
+    label: "LinkedIn",
+    value: profile.linkedinHandle,
+    href: profile.linkedin,
+    icon: LinkedIn,
+    copyable: false,
+    external: true,
+  },
+  {
     label: "Location",
     value: profile.location,
     href: null,
@@ -43,7 +51,7 @@ export function Contact() {
   return (
     <Section
       id="contact"
-      index="06"
+      index="07"
       eyebrow="Contact"
       title={
         <>
@@ -59,7 +67,7 @@ export function Contact() {
           className="pointer-events-none absolute -right-24 -top-24 size-72 rounded-full bg-accent-soft blur-[100px]"
         />
 
-        <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="relative grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <h3 className="display text-[2rem] leading-tight md:text-[2.5rem]">
               Open to new opportunities and collaborations.
@@ -99,12 +107,12 @@ export function Contact() {
                         {...(channel.external
                           ? { target: "_blank", rel: "noreferrer noopener" }
                           : {})}
-                        className="link-sweep mt-1 block truncate text-sm font-medium transition-colors duration-300 hover:text-accent"
+                        className="link-sweep mt-1 block text-sm [overflow-wrap:anywhere] font-medium transition-colors duration-300 hover:text-accent"
                       >
                         {channel.value}
                       </a>
                     ) : (
-                      <p className="mt-1 truncate text-sm font-medium">{channel.value}</p>
+                      <p className="mt-1 text-sm font-medium [overflow-wrap:anywhere]">{channel.value}</p>
                     )}
                   </div>
 

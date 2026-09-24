@@ -6,7 +6,7 @@ export const siteUrl =
     : "http://localhost:3000");
 
 /**
- * Search-engine indexing switch. Kept off while the site still shows
- * placeholder content; flip to `true` once the content is final.
+ * Search-engine indexing switch. Set to `false` to hide the whole site from
+ * search engines (e.g. while content is being reworked).
  */
-export const indexable = false;
+export const indexable = true;

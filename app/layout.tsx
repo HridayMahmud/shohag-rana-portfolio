@@ -85,7 +85,7 @@ const personJsonLd = {
   email: `mailto:${profile.email}`,
   telephone: profile.phoneHref,
   address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "BD" },
-  sameAs: [profile.github],
+  sameAs: [profile.github, profile.linkedin],
   knowsAbout: skillGroups.flatMap((group) => group.items),
   knowsLanguage: ["Bengali", "English"],
   alumniOf: education.map((item) => ({

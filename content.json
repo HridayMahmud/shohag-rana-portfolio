@@ -31,8 +31,26 @@
     "portrait": "/md-shohag-rana.jpg",
     "focus": "TypeScript · React/Next.js · Node.js",
     "summary": "Full Stack Software Engineer with 1+ year of professional experience building production web and mobile applications with TypeScript, React/Next.js and Node.js. Currently delivering a multi-tenant healthcare SaaS platform for Swedish clinics — regulatory compliance workflows, PostgreSQL Row-Level Security, REST APIs and a React Native app shipped to Google Play. Comfortable owning a feature end-to-end, from database schema to release.",
-    "tagline": "I build production web and mobile applications with TypeScript, React/Next.js and Node.js — owning a feature end-to-end, from database schema to release."
+    "tagline": "I build production web and mobile applications with TypeScript, React/Next.js and Node.js — currently a multi-tenant healthcare SaaS for Swedish clinics, with a React Native app shipped to Google Play."
   },
+  "stats": [
+    {
+      "value": "1+ yr",
+      "label": "Professional experience"
+    },
+    {
+      "value": "3",
+      "label": "Key projects"
+    },
+    {
+      "value": "Web + Mobile",
+      "label": "Next.js & React Native"
+    },
+    {
+      "value": "Google Play",
+      "label": "Android app shipped"
+    }
+  ],
   "sections": {
     "experienceIntro": "Full-stack roles across web and mobile — from MERN-stack web applications to a multi-tenant healthcare SaaS with a React Native app on Google Play.",
     "projectsIntro": "A production healthcare SaaS and two API-first backends — each one built end to end, from data model and authentication through to release."
@@ -71,25 +89,58 @@
         "Built secure RESTful APIs with JWT authentication and role-based authorization, and implemented responsive, cross-browser user interfaces from design handoff.",
         "Collaborated in a cross-functional team to integrate frontend interfaces with backend services and third-party APIs, and reviewed code to keep the codebase maintainable."
       ],
-      "stack": ["MongoDB", "Express.js", "React.js", "Node.js", "Next.js", "Vue.js", "JWT"]
+      "stack": [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "Next.js",
+        "Vue.js",
+        "JWT"
+      ]
     }
   ],
   "skillGroups": [
     {
       "title": "Languages",
-      "items": ["TypeScript", "JavaScript (ES6+)", "PHP", "SQL"]
+      "items": [
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "PHP",
+        "SQL"
+      ]
     },
     {
       "title": "Frontend",
-      "items": ["React.js", "Next.js", "Vue.js", "Tailwind CSS", "HTML5", "CSS3", "Bootstrap"]
+      "items": [
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "Tailwind CSS",
+        "HTML5",
+        "CSS3",
+        "Bootstrap"
+      ]
     },
     {
       "title": "Backend & API",
-      "items": ["Node.js", "Express.js", "Laravel", "RESTful API design", "Socket.IO"]
+      "items": [
+        "Node.js",
+        "Express.js",
+        "Laravel",
+        "RESTful API design",
+        "Socket.IO"
+      ]
     },
     {
       "title": "Database & ORM",
-      "items": ["PostgreSQL", "MongoDB", "MySQL", "Drizzle ORM", "Prisma"]
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL",
+        "Drizzle ORM",
+        "Prisma"
+      ]
     },
     {
       "title": "Auth & Security",
@@ -115,7 +166,12 @@
     },
     {
       "title": "Also worked with",
-      "items": ["C++", "Python", "Java", "SQL Server"]
+      "items": [
+        "C++",
+        "Python",
+        "Java",
+        "SQL Server"
+      ]
     }
   ],
   "marqueeStack": [
@@ -178,7 +234,13 @@
       "highlights": [
         "Implemented JWT authentication, Role-Based Access Control (RBAC), full CRUD operations and admin-level authorization for parcel management."
       ],
-      "stack": ["Node.js", "Express.js", "MongoDB", "JWT", "RBAC"],
+      "stack": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "RBAC"
+      ],
       "repo": "https://github.com/HridayMahmud/courier-management-backend"
     },
     {
@@ -189,7 +251,12 @@
       "highlights": [
         "Added request validation and concurrency handling to keep file and storage operations reliable under parallel writes."
       ],
-      "stack": ["Node.js", "Express.js", "MongoDB", "REST API"],
+      "stack": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "REST API"
+      ],
       "repo": "https://github.com/HridayMahmud/mini_cloud_storage_system"
     }
   ],
@@ -203,22 +270,30 @@
     },
     {
       "institution": "Vashantek Govt. College",
-      "qualification": "Higher Secondary Certificate (HSC) — Science",
+      "qualification": "Higher Secondary Certificate (HSC)",
+      "group": "Science",
       "year": "2016",
       "resultLabel": "GPA",
       "result": "4.50"
     },
     {
       "institution": "Rupshi High School",
-      "qualification": "Secondary School Certificate (SSC) — Science",
+      "qualification": "Secondary School Certificate (SSC)",
+      "group": "Science",
       "year": "2014",
       "resultLabel": "GPA",
       "result": "5.00"
     }
   ],
   "languages": [
-    { "name": "Bangla", "level": "Native" },
-    { "name": "English", "level": "Fluent — professional working proficiency" }
+    {
+      "name": "Bangla",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Fluent — professional working proficiency"
+    }
   ],
   "references": [
     {
@@ -229,5 +304,6 @@
       "name": "Mr. M M Fazle Rabbi",
       "title": "Assistant Professor, Bangladesh University of Business & Technology"
     }
-  ]
+  ],
+  "referencesNote": "Contact details available on request."
 }

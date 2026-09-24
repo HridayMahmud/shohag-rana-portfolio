@@ -55,6 +55,7 @@ export type Project = {
 export type Education = {
   institution: string;
   qualification: string;
+  group?: string;
   year: string;
   resultLabel: string;
   result: string;
@@ -63,6 +64,8 @@ export type Education = {
 export type Language = { name: string; level: string };
 
 export type Reference = { name: string; title: string };
+
+export type Stat = { value: string; label: string };
 
 export const meta: { description: string; keywords: string[] } = content.meta;
 export const profile: Profile = content.profile;
@@ -75,6 +78,9 @@ export const projects: Project[] = content.projects;
 export const education: Education[] = content.education;
 export const languages: Language[] = content.languages;
 export const references: Reference[] = content.references;
+export const referencesNote: string = content.referencesNote;
+/** CV-backed figures only — never add a number the CV does not state. */
+export const stats: Stat[] = content.stats;
 
 export const navItems = [
   { id: "about", label: "About" },

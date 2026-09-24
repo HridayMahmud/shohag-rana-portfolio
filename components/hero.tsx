@@ -2,7 +2,8 @@ import Image from "next/image";
 
 import { experience, profile } from "@/lib/content";
 import { reveal } from "@/lib/reveal";
-import { ArrowDown, ArrowUpRight, Download, GitHub, Mail } from "./icons";
+import { ArrowDown, ArrowUpRight, Download, GitHub, LinkedIn, Mail } from "./icons";
+import { StatStrip } from "./stat-strip";
 
 export function Hero() {
   const current = experience.find((item) => item.current);
@@ -80,6 +81,17 @@ export function Hero() {
               </li>
               <li>
                 <a
+                  href={profile.linkedin}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="link-sweep transition-colors duration-300 hover:text-ink"
+                >
+                  <LinkedIn className="size-4" />
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
                   href={`mailto:${profile.email}`}
                   className="link-sweep transition-colors duration-300 hover:text-ink"
                 >
@@ -124,6 +136,8 @@ export function Hero() {
 
           </div>
         </div>
+
+        <StatStrip />
 
         <p
           {...reveal(

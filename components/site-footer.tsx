@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { profile } from "@/lib/content";
-import { ArrowUpRight, GitHub, Mail } from "./icons";
+import { ArrowUpRight, GitHub, LinkedIn, Mail } from "./icons";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -32,6 +32,15 @@ export function SiteFooter() {
             >
               <GitHub className="size-4" />
               GitHub
+            </a>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="link-sweep transition-colors duration-300 hover:text-ink"
+            >
+              <LinkedIn className="size-4" />
+              LinkedIn
             </a>
             <a
               href={`mailto:${profile.email}`}
