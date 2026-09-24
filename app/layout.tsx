@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 
 import { education, profile, skillGroups } from "@/lib/content";
-import { siteUrl } from "@/lib/site";
+import { indexable, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     description,
   },
   robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+    index: indexable,
+    follow: indexable,
+    googleBot: { index: indexable, follow: indexable, "max-image-preview": "large" },
   },
   category: "technology",
 };
