@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 
-import { education, profile, skillGroups } from "@/lib/content";
+import { education, meta, profile, skillGroups } from "@/lib/content";
 import { indexable, siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -26,8 +26,7 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-const description =
-  "Portfolio of MD Shohag Rana — a Full Stack Software Developer in Dhaka, Bangladesh, building scalable web applications with the MERN stack, Next.js and Vue.js.";
+const description = meta.description;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -36,17 +35,7 @@ export const metadata: Metadata = {
     template: `%s — ${profile.name}`,
   },
   description,
-  keywords: [
-    "MD Shohag Rana",
-    "Full Stack Developer",
-    "Software Developer",
-    "MERN Stack Developer",
-    "React Developer",
-    "Next.js Developer",
-    "Node.js Developer",
-    "Dhaka",
-    "Bangladesh",
-  ],
+  keywords: meta.keywords,
   authors: [{ name: profile.name, url: siteUrl }],
   creator: profile.name,
   alternates: { canonical: "/" },
@@ -90,7 +79,7 @@ const personJsonLd = {
   "@type": "Person",
   name: profile.name,
   jobTitle: profile.role,
-  description: profile.objective,
+  description: profile.summary,
   url: siteUrl,
   image: `${siteUrl}${profile.portrait}`,
   email: `mailto:${profile.email}`,

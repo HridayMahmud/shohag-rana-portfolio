@@ -3,8 +3,6 @@ import Link from "next/link";
 
 import { ArrowUpRight, Download } from "@/components/icons";
 import {
-  achievement,
-  competencies,
   education,
   experience,
   languages,
@@ -78,7 +76,7 @@ export default function ResumePage() {
 
         <div className="mt-10 space-y-10">
           <Block title="Profile">
-            <p className="text-sm leading-relaxed text-muted">{profile.objective}</p>
+            <p className="text-sm leading-relaxed text-muted">{profile.summary}</p>
           </Block>
 
           <Block title="Experience">
@@ -92,7 +90,14 @@ export default function ResumePage() {
                     <span className="eyebrow">{role.period}</span>
                   </div>
                   <p className="mt-1 text-xs text-subtle">{role.location}</p>
-                  <p className="mt-2.5 text-sm leading-relaxed text-muted">{role.summary}</p>
+                  <ul className="mt-2.5 space-y-1.5">
+                    {role.bullets.map((bullet) => (
+                      <li key={bullet} className="flex gap-2.5 text-sm leading-relaxed text-muted">
+                        <span aria-hidden="true" className="mt-[0.5rem] size-1 shrink-0 rounded-full bg-accent" />
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
                 </li>
               ))}
             </ol>
@@ -135,14 +140,16 @@ export default function ResumePage() {
                         {project.liveLabel}
                       </a>
                     ) : null}
-                    <a
-                      href={project.repo}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="text-accent hover:underline"
-                    >
-                      {project.repo.replace("https://", "")}
-                    </a>
+                    {project.repo ? (
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="break-all text-accent hover:underline"
+                      >
+                        {project.repo.replace("https://", "")}
+                      </a>
+                    ) : null}
                   </p>
                 </li>
               ))}
@@ -181,23 +188,8 @@ export default function ResumePage() {
             </ol>
           </Block>
 
-          <Block title="Core competencies">
-            <dl className="space-y-3">
-              {competencies.map((competency) => (
-                <div key={competency.title} className="grid gap-1 sm:grid-cols-[13rem_1fr] sm:gap-4">
-                  <dt className="text-sm font-medium">{competency.title}</dt>
-                  <dd className="text-sm text-muted">{competency.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </Block>
-
           <Block title="Additional">
             <dl className="space-y-3">
-              <div className="grid gap-1 sm:grid-cols-[13rem_1fr] sm:gap-4">
-                <dt className="text-sm font-medium">Achievements</dt>
-                <dd className="text-sm text-muted">{achievement}</dd>
-              </div>
               <div className="grid gap-1 sm:grid-cols-[13rem_1fr] sm:gap-4">
                 <dt className="text-sm font-medium">Languages</dt>
                 <dd className="text-sm text-muted">

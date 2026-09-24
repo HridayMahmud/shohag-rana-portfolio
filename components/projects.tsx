@@ -1,4 +1,4 @@
-import { projects } from "@/lib/content";
+import { projects, sections } from "@/lib/content";
 import { reveal } from "@/lib/reveal";
 import { ArrowUpRight, GitHub } from "./icons";
 import { Section } from "./section";
@@ -16,12 +16,7 @@ export function Projects() {
           <span className="italic text-accent">designed and shipped.</span>
         </>
       }
-      intro={
-        <p>
-          Two API-first backends and two React interfaces — each one built end to end, from data
-          model and authentication through to the screens people actually use.
-        </p>
-      }
+      intro={<p>{sections.projectsIntro}</p>}
     >
       <ul className="grid gap-5 md:grid-cols-2">
         {projects.map((project, index) => (
@@ -87,16 +82,18 @@ export function Projects() {
                     </a>
                   ) : null}
 
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label={`View the source code for ${project.title} on GitHub`}
-                    className="link-sweep text-sm font-medium text-muted transition-colors duration-300 hover:text-accent"
-                  >
-                    <GitHub className="size-3.5" />
-                    Source code
-                  </a>
+                  {project.repo ? (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={`View the source code for ${project.title} on GitHub`}
+                      className="link-sweep text-sm font-medium text-muted transition-colors duration-300 hover:text-accent"
+                    >
+                      <GitHub className="size-3.5" />
+                      Source code
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </article>

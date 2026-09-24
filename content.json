@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "description": "Portfolio of MD Shohag Rana — a Full Stack Software Engineer in Dhaka, Bangladesh, building production web and mobile applications with TypeScript, React/Next.js and Node.js.",
+    "keywords": [
+      "MD Shohag Rana",
+      "Full Stack Software Engineer",
+      "Full Stack Developer",
+      "TypeScript Developer",
+      "React Developer",
+      "Next.js Developer",
+      "React Native Developer",
+      "Node.js Developer",
+      "Dhaka",
+      "Bangladesh"
+    ]
+  },
+  "profile": {
+    "name": "MD Shohag Rana",
+    "shortName": "Shohag Rana",
+    "initials": "SR",
+    "role": "Full Stack Software Engineer",
+    "location": "Dhaka, Bangladesh",
+    "email": "shohag.rana0114@gmail.com",
+    "phone": "+880 1760-980498",
+    "phoneHref": "+8801760980498",
+    "github": "https://github.com/HridayMahmud",
+    "githubHandle": "HridayMahmud",
+    "linkedin": "https://www.linkedin.com/in/shohag-rana-580a562a4",
+    "linkedinHandle": "shohag-rana-580a562a4",
+    "cv": "/md-shohag-rana-cv.pdf",
+    "portrait": "/md-shohag-rana.jpg",
+    "focus": "TypeScript · React/Next.js · Node.js",
+    "summary": "Full Stack Software Engineer with 1+ year of professional experience building production web and mobile applications with TypeScript, React/Next.js and Node.js. Currently delivering a multi-tenant healthcare SaaS platform for Swedish clinics — regulatory compliance workflows, PostgreSQL Row-Level Security, REST APIs and a React Native app shipped to Google Play. Comfortable owning a feature end-to-end, from database schema to release.",
+    "tagline": "I build production web and mobile applications with TypeScript, React/Next.js and Node.js — owning a feature end-to-end, from database schema to release."
+  },
+  "sections": {
+    "experienceIntro": "Full-stack roles across web and mobile — from MERN-stack web applications to a multi-tenant healthcare SaaS with a React Native app on Google Play.",
+    "projectsIntro": "A production healthcare SaaS and two API-first backends — each one built end to end, from data model and authentication through to release."
+  },
+  "experience": [
+    {
+      "company": "Codemoly",
+      "role": "Software Engineer",
+      "location": "The Emporium Tower, Shyamoli, Dhaka",
+      "period": "Feb 2026 — Present",
+      "current": true,
+      "bullets": [
+        "Full-stack developer on Lumiis, a multi-tenant healthcare SaaS platform — shipping features end-to-end across a Next.js web app and a React Native app that share one pnpm monorepo, TypeScript packages and PostgreSQL database.",
+        "Design schema changes and author Drizzle ORM migrations against a 70-table multi-tenant PostgreSQL database secured with Row-Level Security, and build the REST APIs consumed by both the web and mobile clients.",
+        "Own Android release engineering to Google Play, and maintain test coverage with Vitest and Playwright behind a GitHub Actions pipeline that gates every merge on typecheck, lint, tests and translation parity."
+      ],
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "React Native",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Vitest",
+        "Playwright",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "company": "BemanTech Ltd.",
+      "role": "Software Developer",
+      "location": "Tongi, Gazipur",
+      "period": "Jun 2025 — Feb 2026",
+      "current": false,
+      "bullets": [
+        "Developed full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) alongside Next.js and Vue.js.",
+        "Built secure RESTful APIs with JWT authentication and role-based authorization, and implemented responsive, cross-browser user interfaces from design handoff.",
+        "Collaborated in a cross-functional team to integrate frontend interfaces with backend services and third-party APIs, and reviewed code to keep the codebase maintainable."
+      ],
+      "stack": ["MongoDB", "Express.js", "React.js", "Node.js", "Next.js", "Vue.js", "JWT"]
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Languages",
+      "items": ["TypeScript", "JavaScript (ES6+)", "PHP", "SQL"]
+    },
+    {
+      "title": "Frontend",
+      "items": ["React.js", "Next.js", "Vue.js", "Tailwind CSS", "HTML5", "CSS3", "Bootstrap"]
+    },
+    {
+      "title": "Backend & API",
+      "items": ["Node.js", "Express.js", "Laravel", "RESTful API design", "Socket.IO"]
+    },
+    {
+      "title": "Database & ORM",
+      "items": ["PostgreSQL", "MongoDB", "MySQL", "Drizzle ORM", "Prisma"]
+    },
+    {
+      "title": "Auth & Security",
+      "items": [
+        "JWT",
+        "Better Auth",
+        "Role-Based Access Control (RBAC)",
+        "PostgreSQL Row-Level Security"
+      ]
+    },
+    {
+      "title": "Mobile & DevOps",
+      "items": [
+        "React Native",
+        "Expo",
+        "Google Play releases",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright",
+        "Git",
+        "pnpm monorepo"
+      ]
+    },
+    {
+      "title": "Also worked with",
+      "items": ["C++", "Python", "Java", "SQL Server"]
+    }
+  ],
+  "marqueeStack": [
+    "TypeScript",
+    "JavaScript",
+    "React.js",
+    "Next.js",
+    "React Native",
+    "Expo",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Drizzle ORM",
+    "Prisma",
+    "MongoDB",
+    "Tailwind CSS",
+    "Socket.IO",
+    "Vitest",
+    "Playwright",
+    "GitHub Actions"
+  ],
+  "projects": [
+    {
+      "slug": "lumiis",
+      "title": "Lumiis — Clinic Compliance & Treatment Management SaaS",
+      "category": "Full Stack · Web & Mobile",
+      "role": "Full Stack Developer (Web & Mobile)",
+      "period": "Jun 2026 — Present",
+      "summary": "Developed a multi-tenant SaaS platform for Swedish aesthetic clinics, covering clinical workflows, device management, treatments, patient communication and regulatory compliance.",
+      "highlights": [
+        "Built role-based access control across 4 user roles, with granular practitioner permissions enforced across web, REST APIs, mobile and PostgreSQL Row-Level Security.",
+        "Implemented SSMFS 2026:1 compliance workflows including device registration, delivery inspections, functional checks, digital signatures, consent management, audit logging and Swedish PDF/A report generation.",
+        "Developed and maintained features across Next.js web and React Native mobile applications, backed by a 70-table PostgreSQL database and Drizzle ORM.",
+        "Contributed to automated testing and CI/CD using Vitest, Playwright and GitHub Actions, and handled Android release engineering through Google Play."
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Better Auth",
+        "REST API",
+        "Socket.IO",
+        "Tailwind CSS",
+        "Vitest",
+        "Playwright",
+        "GitHub Actions"
+      ],
+      "live": "https://lumiis.se",
+      "liveLabel": "lumiis.se"
+    },
+    {
+      "slug": "courier-management-system",
+      "title": "Courier Management System",
+      "category": "Backend & API",
+      "summary": "Developed a role-based RESTful API for courier and parcel management using Node.js, Express.js and MongoDB.",
+      "highlights": [
+        "Implemented JWT authentication, Role-Based Access Control (RBAC), full CRUD operations and admin-level authorization for parcel management."
+      ],
+      "stack": ["Node.js", "Express.js", "MongoDB", "JWT", "RBAC"],
+      "repo": "https://github.com/HridayMahmud/courier-management-backend"
+    },
+    {
+      "slug": "mini-cloud-storage-system",
+      "title": "Mini Cloud Storage System",
+      "category": "Backend & API",
+      "summary": "Built a RESTful cloud storage service with file upload, file deletion and per-user storage management enforcing a 500 MB quota.",
+      "highlights": [
+        "Added request validation and concurrency handling to keep file and storage operations reliable under parallel writes."
+      ],
+      "stack": ["Node.js", "Express.js", "MongoDB", "REST API"],
+      "repo": "https://github.com/HridayMahmud/mini_cloud_storage_system"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bangladesh University of Business & Technology (BUBT)",
+      "qualification": "B.Sc. in Computer Science & Engineering (CSE)",
+      "year": "2024",
+      "resultLabel": "CGPA",
+      "result": "3.22"
+    },
+    {
+      "institution": "Vashantek Govt. College",
+      "qualification": "Higher Secondary Certificate (HSC) — Science",
+      "year": "2016",
+      "resultLabel": "GPA",
+      "result": "4.50"
+    },
+    {
+      "institution": "Rupshi High School",
+      "qualification": "Secondary School Certificate (SSC) — Science",
+      "year": "2014",
+      "resultLabel": "GPA",
+      "result": "5.00"
+    }
+  ],
+  "languages": [
+    { "name": "Bangla", "level": "Native" },
+    { "name": "English", "level": "Fluent — professional working proficiency" }
+  ],
+  "references": [
+    {
+      "name": "Md Sajeeb Hossain",
+      "title": "Chief Technology Officer, Codemoly"
+    },
+    {
+      "name": "Mr. M M Fazle Rabbi",
+      "title": "Assistant Professor, Bangladesh University of Business & Technology"
+    }
+  ]
+}

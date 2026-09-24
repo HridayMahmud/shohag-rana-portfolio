@@ -43,7 +43,7 @@ export function Hero() {
             >
               {profile.role}
               <span aria-hidden="true" className="h-px w-10 bg-line-strong" />
-              MERN · Next.js · Vue.js
+              {profile.focus}
             </p>
 
             <p {...reveal(180, "mt-7 max-w-xl text-base leading-relaxed text-muted md:text-lg")}>

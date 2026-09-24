@@ -82,7 +82,7 @@ export default function OpengraphImage() {
               letterSpacing: "0.04em",
             }}
           >
-            <div style={{ display: "flex" }}>MERN Stack · Next.js · Vue.js · RESTful APIs</div>
+            <div style={{ display: "flex" }}>{profile.focus}</div>
             <div style={{ display: "flex" }}>github.com/{profile.githubHandle}</div>
           </div>
         </div>

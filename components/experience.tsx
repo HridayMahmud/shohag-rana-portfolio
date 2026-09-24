@@ -1,4 +1,4 @@
-import { experience } from "@/lib/content";
+import { experience, sections } from "@/lib/content";
 import { reveal } from "@/lib/reveal";
 import { Section } from "./section";
 
@@ -15,12 +15,7 @@ export function Experience() {
           <span className="italic text-accent">building.</span>
         </>
       }
-      intro={
-        <p>
-          Software development roles focused on the MERN stack, Next.js and Vue.js — shipping
-          scalable, secure web applications with modern UI/UX, RESTful APIs and authentication.
-        </p>
-      }
+      intro={<p>{sections.experienceIntro}</p>}
     >
       <ol className="max-w-3xl">
         {experience.map((role, index) => (
@@ -52,9 +47,20 @@ export function Experience() {
               <p className="mt-1.5 text-sm font-medium text-accent">{role.company}</p>
               <p className="mt-1 text-sm text-subtle">{role.location}</p>
 
-              <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted md:text-[0.9375rem]">
-                {role.summary}
-              </p>
+              <ul className="mt-5 max-w-2xl space-y-2.5">
+                {role.bullets.map((bullet) => (
+                  <li
+                    key={bullet}
+                    className="flex gap-3 text-sm leading-relaxed text-muted md:text-[0.9375rem]"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="mt-[0.55rem] size-1 shrink-0 rounded-full bg-accent"
+                    />
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
 
               <ul className="mt-6 flex flex-wrap gap-2">
                 {role.stack.map((item) => (
