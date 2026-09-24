@@ -223,10 +223,18 @@
   "projects": [
     {
       "slug": "lumiis",
+      "featured": true,
       "title": "Lumiis — Clinic Compliance & Treatment Management SaaS",
+      "shortTitle": "Lumiis",
       "category": "Full Stack · Web & Mobile",
       "role": "Full Stack Developer (Web & Mobile)",
       "period": "Jun 2026 — Present",
+      "facts": [
+        "4 user roles",
+        "70-table PostgreSQL",
+        "SSMFS 2026:1 compliance",
+        "Web + Android on Google Play"
+      ],
       "summary": "Developed a multi-tenant SaaS platform for Swedish aesthetic clinics, covering clinical workflows, device management, treatments, patient communication and regulatory compliance.",
       "highlights": [
         "Built role-based access control across 4 user roles, with granular practitioner permissions enforced across web, REST APIs, mobile and PostgreSQL Row-Level Security.",

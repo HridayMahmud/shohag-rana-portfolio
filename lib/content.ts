@@ -40,10 +40,16 @@ export type SkillGroup = { title: string; items: string[]; secondary?: boolean }
 
 export type Project = {
   slug: string;
+  /** Shown as the wide flagship card. */
+  featured?: boolean;
   title: string;
+  /** Short name for the flagship card's panel. */
+  shortTitle?: string;
   category: string;
   role?: string;
   period?: string;
+  /** CV-stated facts for the flagship card's panel. */
+  facts?: string[];
   summary: string;
   highlights: string[];
   stack: string[];

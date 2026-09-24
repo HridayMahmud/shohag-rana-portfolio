@@ -126,6 +126,12 @@ export default function ResumePage() {
                     <span className="eyebrow">{project.category}</span>
                   </div>
 
+                  {project.role || project.period ? (
+                    <p className="mt-1 text-xs text-subtle">
+                      {[project.role, project.period].filter(Boolean).join(" · ")}
+                    </p>
+                  ) : null}
+
                   <p className="mt-2 text-sm leading-relaxed text-muted">{project.summary}</p>
 
                   <ul className="mt-2.5 space-y-1.5">
