@@ -60,7 +60,6 @@ export function SiteFooter() {
           <p className="eyebrow">
             © {year} {profile.name}
           </p>
-          <p className="eyebrow">Built with Next.js, TypeScript &amp; Tailwind CSS</p>
         </div>
       </div>
     </footer>
